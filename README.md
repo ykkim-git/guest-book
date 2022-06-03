@@ -1,4 +1,4 @@
-## Wedding Guest Book
+## Guest Book
 
 ### 사용된 도구들
 
