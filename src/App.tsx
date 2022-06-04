@@ -1,10 +1,15 @@
 import "./App.scss";
+import { fire } from "./utils/firebase";
+import { useEffect } from "react";
 
 import Title from "./components/Title";
 import ImageList from "./components/ImageList";
 import Form from "./components/Form";
 import Books from "./components/Books";
 const App = () => {
+  useEffect(() => {
+    fire();
+  }, []);
   return (
     <div className="App">
       <Title />
