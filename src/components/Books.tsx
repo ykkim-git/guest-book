@@ -1,16 +1,32 @@
 import styles from "./Books.module.scss";
-import { useState, useEffect } from "react";
 const Books = () => {
+  interface ItemType {
+    name: string;
+    content: string;
+  }
+  const books: Array<ItemType> = [
+    {
+      name: "김영권",
+      content: "행복하세요~^^ ",
+    },
+    {
+      name: "이빛나",
+      content: "행복하세요~^^ ",
+    },
+  ];
   return (
-    <article className={styles.container}>
-      <section className={styles.books}>
-        <input type="text" placeholder="이름" />
-        <textarea placeholder="내용을 입력해주세요." />
-        <button className={styles.button} role="button">
-          등록하기
-        </button>
-      </section>
-    </article>
+    <>
+      {books.map((item, idx) => {
+        return (
+          <article className={styles.container} key={idx + 1}>
+            <section className={styles.container__body}>
+              <h1>from. {item?.name}</h1>
+              <h3>{item?.content}</h3>
+            </section>
+          </article>
+        );
+      })}
+    </>
   );
 };
 

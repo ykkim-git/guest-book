@@ -10,6 +10,7 @@
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "recoil": "^0.7.3",
     "sass": "^1.52.2",
     "sass-loader": "^13.0.0"
   },
