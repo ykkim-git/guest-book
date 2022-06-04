@@ -12,3 +12,9 @@
 ### 라이브러리
 
 - React-qr-code
+
+### TODO-LIST
+
+- infinite scroll
+- 배포 자동화
+- aws

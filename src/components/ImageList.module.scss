@@ -1,0 +1,13 @@
+.container {
+  gap: 12px;
+  margin-bottom: 24px;
+
+  display: flex;
+  overflow-x: auto;
+  padding-left: 12px;
+  img {
+    height: 280px;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px 0px #323232;
+  }
+}
