@@ -1,6 +1,5 @@
-import * as firebase from "firebase";
-let database;
-
+import firebase from "firebase/compat/app";
+import { getDatabase } from "firebase/database";
 const config = {
   apiKey: "AIzaSyDi9HBJXTUkdwWuGDY6MDr-zDx4pL1P8hI",
   authDomain: "wedding-guest-book-a24f9.firebaseapp.com",
@@ -13,8 +12,5 @@ const config = {
 };
 
 export const fire = () => {
-  if (!firebase.apps.length) {
-    firebase.initializeApp(config);
-  }
-  database = firebase.database();
+  const app = firebase.initializeApp(config);
 };

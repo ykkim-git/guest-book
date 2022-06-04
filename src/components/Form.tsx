@@ -1,5 +1,7 @@
 import styles from "./Form.module.scss";
 import React, { useState, useEffect } from "react";
+import { getDatabase, ref, set } from "firebase/database";
+
 const Form = () => {
   const [name, setName] = useState("");
   const [content, setContent] = useState("");
@@ -11,8 +13,15 @@ const Form = () => {
     setContent(evt.target.value);
 
   const handleSubmit = () => {
-    console.log(name, content);
+    const db = getDatabase();
+    set(ref(db, name), {
+      content,
+    });
+
+    setName("");
+    setContent("");
   };
+
   return (
     <article className={styles.container}>
       <section className={styles.form}>

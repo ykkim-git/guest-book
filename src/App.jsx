@@ -7,9 +7,8 @@ import ImageList from "./components/ImageList";
 import Form from "./components/Form";
 import Books from "./components/Books";
 const App = () => {
-  useEffect(() => {
-    fire();
-  }, []);
+  fire();
+
   return (
     <div className="App">
       <Title />
