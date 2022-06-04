@@ -3,10 +3,13 @@ import styles from "./ImageList.module.scss";
 const ImageList = () => {
   return (
     <div className={styles.container}>
-      <img src="/assets/boribome01.jpg" />
-      <img src="/assets/boribome02.jpg" />
-      <img src="/assets/boribome03.jpg" />
-      <img src="/assets/boribome04.jpg" />
+      <img src="/assets/01.JPG" />
+      <img src="/assets/02.JPG" />
+      <img src="/assets/03.JPG" />
+      <img src="/assets/04.JPG" />
+      <img src="/assets/05.JPG" />
+      <img src="/assets/06.JPG" />
+      <img src="/assets/07.JPG" />
     </div>
   );
 };
